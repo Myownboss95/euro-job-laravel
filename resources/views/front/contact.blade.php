@@ -1,136 +1,95 @@
-@extends('layouts.front')
-
-@section('title', 'Home')
-
-@section('content')
-    <!-- Breadcrumb -->
-    <div class="banner-section position-relative">
-        <!-- Container -->
-        <div class="container">
-            <!-- row -->
-            <div class="row">
-                <!-- col  -->
-                <div class="col-md-6">
-                    <div class="banner-content banner-padding">
-                        <h3 class="title">CONTACT US</h3>
-                    </div>
+@include('front.template.header')
+<main>
+    <!-- section content begin -->
+    <div class="uk-section">
+        <div class="uk-container">
+            <div class="uk-grid">
+                <div class="uk-width-3-5@m">
+                    <h1 class="uk-margin-remove-bottom">{{ __('Contact Us') }}</h1>
+                    <p class="uk-text-lead uk-text-muted uk-margin-small-top">
+                        {{ __('Do not hesitate to reach out. Just fill in the contact form here and we’ll be sure to reply as fast as possible.') }}
+                    </p>
                 </div>
-                <!-- /col -->
-                <!-- col -->
-                <div class="col-md-6 mt-7 mt-md-0">
-                    <div class="banner-content scene banner-img">
-                        <div data-depth="0.2">
-                            <img src="/assets/front/images/bg/4.png" alt="img" />
+                <div class="uk-width-1-1@m uk-margin-large-top">
+                    <div
+                        class="uk-grid uk-grid-large"
+                        data-uk-grid
+                    >
+                        <div class="uk-width-1-3@m">
+                            <h4 class="uk-margin-remove-bottom">{{ __('Visit our office') }}</h4>
+                            <p class="uk-margin-small-top">Satrio Tower 16th Floor, Jl. Prof Dr Satrio Kuningan, Jakarta
+                            </p>
+                            <h4 class="uk-margin-medium-top uk-margin-remove-bottom">Message us</h4>
+                            <p class="uk-margin-small-top">hello@company.com<br>(888)234-5686</p>
+                            {{-- <div class="uk-margin-medium-top in-contact-socials">
+                            <a href="#" class="fab fa-facebook-square fa-lg uk-margin-right"></a>
+                            <a href="#" class="fab fa-twitter fa-lg uk-margin-right"></a>
+                            <a href="#" class="fab fa-linkedin-in fa-lg uk-margin-right"></a>
+                            <a href="#" class="fab fa-instagram fa-lg uk-margin-right"></a>
+                            <a href="#" class="fab fa-pinterest fa-lg uk-margin-right"></a>
+                        </div> --}}
                         </div>
-                    </div>
-                </div>
-                <!-- /col -->
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /Container -->
-    </div>
-    <!-- /Breadcrumb -->
-
-    <!-- Contact Info -->
-    <div class="contact-info-area pt-100 pb-70">
-        <!-- Container -->
-        <div class="container">
-            <!-- row -->
-            <div class="row">
-                <!-- col -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact-info-box">
-                        <div class="back-icon">
-                            <i class="ri-map-2-line"></i>
-                        </div>
-                        <div class="icon">
-                            <i class="ri-map-2-line"></i>
-                        </div>
-                        <h3>Our Address</h3>
-                        <p>{{ optional($contact)->address }}</p>
-                    </div>
-                </div>
-                <!-- /col -->
-                <!-- col -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="contact-info-box">
-                        <div class="back-icon">
-                            <i class="ri-phone-line"></i>
-                        </div>
-                        <div class="icon">
-                            <i class="ri-phone-line"></i>
-                        </div>
-                        <h3>Contact</h3>
-                        <p>Mobile: <a href="tel:{{ optional($contact)->phone }}">{{ optional($contact)->phone }}</a></p>
-                        <p>E-mail: <a href="mailto:{{ optional($contact)->support_email }}">{{ optional($contact)->support_email }}</a>
-                        </p>
-                    </div>
-                </div>
-                <!-- /col -->
-                <!-- col -->
-                <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                    <div class="contact-info-box">
-                        <div class="back-icon">
-                            <i class="ri-time-line"></i>
-                        </div>
-                        <div class="icon">
-                            <i class="ri-time-line"></i>
-                        </div>
-                        <h3>Hours of Operation</h3>
-                        <p>Monday - Friday: 09:00 - 20:00</p>
-                        {{-- <p>Sunday & Saturday: 10:30 - 22:00</p> --}}
-                    </div>
-                </div>
-                <!-- /col -->
-            </div>
-            <!-- /row -->
-        </div>
-        <!-- /Container -->
-    </div>
-    <!-- /Contact Info -->
-
-    <!-- Contact -->
-    <div class="contact-section">
-        <!-- Container -->
-        <div class="container">
-            <!-- row -->
-            <div class="row clearfix">
-                <!-- col -->
-                <div class="col-lg-6 col-md-12 col-sm-12 form-column m-auto">
-                    <div class="form-inner">
-                        <h3>Send us a message.</h3>
-                        <form method="post" action="#" id="contact-form" class="default-form">
-                            <div class="row clearfix">
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group contact-icon contacts-name">
-                                    <input type="text" name="name" placeholder="Your name *" required="">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group contact-icon contacts-email">
-                                    <input type="email" name="email" placeholder="Your mail *" required="">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group contact-icon contacts-phone">
-                                    <input type="text" name="phone" placeholder="Your Phone *" required="">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group  contact-icon contacts-subject">
-                                    <input type="text" name="subject" placeholder="Subject *" required="">
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group contact-icon contacts-message">
-                                    <textarea name="message" placeholder="Message..."></textarea>
-                                </div>
-                                <div class="col-lg-12 col-md-12 col-sm-12 form-group message-btn">
-                                    <button class="btn theme-btn-1" type="submit" name="submit-form">Send
-                                        now</button>
-                                </div>
+                        <div class="uk-width-2-3@m">
+                            <div class="uk-margin-medium-left in-margin-remove-left@s">
+                                <form
+                                    id="contact-form"
+                                    class="uk-form uk-grid-small"
+                                    data-uk-grid
+                                >
+                                    <div class="uk-width-1-2@s uk-inline">
+                                        <span class="uk-form-icon fas fa-user fa-sm"></span>
+                                        <input
+                                            class="uk-input uk-border-rounded"
+                                            id="name"
+                                            name="name"
+                                            type="text"
+                                            placeholder="{{ __('Full Name') }}"
+                                        >
+                                    </div>
+                                    <div class="uk-width-1-2@s uk-inline">
+                                        <span class="uk-form-icon fas fa-envelope fa-sm"></span>
+                                        <input
+                                            class="uk-input uk-border-rounded"
+                                            id="email"
+                                            name="email"
+                                            type="email"
+                                            placeholder="{{ __('Email Address') }}"
+                                        >
+                                    </div>
+                                    <div class="uk-width-1-1 uk-inline">
+                                        <span class="uk-form-icon fas fa-pen fa-sm"></span>
+                                        <input
+                                            class="uk-input uk-border-rounded"
+                                            id="subject"
+                                            name="subject"
+                                            type="text"
+                                            placeholder="{{ __('Subject') }}"
+                                        >
+                                    </div>
+                                    <div class="uk-width-1-1">
+                                        <textarea
+                                            class="uk-textarea uk-border-rounded"
+                                            id="message"
+                                            name="message"
+                                            rows="6"
+                                            placeholder="{{ __('Message') }}"
+                                        ></textarea>
+                                    </div>
+                                    <div class="uk-width-1-1">
+                                        <button
+                                            class="uk-button uk-button-primary uk-border-rounded uk-align-right"
+                                            id="sendemail"
+                                            type="submit"
+                                            name="submit"
+                                        >{{ __('Send Message') }}</button>
+                                    </div>
+                                </form>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
-                <!-- col -->
             </div>
-            <!-- /row -->
         </div>
-        <!-- Container -->
     </div>
-    <!-- /Contact -->
-
-@endsection
+</main>
+@include('front.template.footer')
