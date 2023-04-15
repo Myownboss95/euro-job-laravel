@@ -464,7 +464,7 @@
 
 <body id="modal"
 class="font-base text-base break-words home page-template page-template-template-home page-template-template-home-php page page-id-10 wp-custom-logo wp-embed-responsive modal container-fluid">
-<x-popup />
+{{-- <x-popup /> --}}
     <picture class="site-bg">
         <source srcset="https://01node.com/wp-content/uploads/2021/10/main-bg.webp" type="image/webp">
         <source srcset="https://01node.com/wp-content/uploads/2021/10/main-bg.png" type="image/png"><img
@@ -795,10 +795,10 @@ Deposit above 20000$ (USD) Worth of any listed coin and receive free 15000TRX(Tr
                                         d="M12.38,1.18a5.18,5.18,0,0,1-1.46.4A2.58,2.58,0,0,0,12,.18a5.21,5.21,0,0,1-1.62.61A2.54,2.54,0,0,0,6.1,3.11,7.25,7.25,0,0,1,.86.45a2.56,2.56,0,0,0,.79,3.4A2.59,2.59,0,0,1,.5,3.52v0a2.55,2.55,0,0,0,2,2.5,2.57,2.57,0,0,1-.67.09,2.61,2.61,0,0,1-.48,0A2.54,2.54,0,0,0,3.76,7.85,5.14,5.14,0,0,1,.61,8.94,6,6,0,0,1,0,8.9a7.16,7.16,0,0,0,3.89,1.15,7.19,7.19,0,0,0,7.23-7.13V2.49A5.1,5.1,0,0,0,12.38,1.18Z" />
                                 </svg></a></li>
                        </ul>
-                </div><a href="mailto:hello@coinstaking.aoo">hello@coinstaking.app</a>
+                </div><a href="mailto:hello@coinstaking.aoo">hello@ {{config('app.base_domain')}}</a>
             </div>
             
-            <div class="text-center mt-lg lg:mt-[55px]">Copyright 2023 - CoinStaking.App</div>
+            <div class="text-center mt-lg lg:mt-[55px]">Copyright 2023 - {{config('app.name')}}</div>
         </div>
     </footer>
 
