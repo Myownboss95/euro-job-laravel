@@ -24,7 +24,7 @@ class AdminFactory extends Factory
         return [
             'name' => $this->faker->name('male'),
             'email' => 'admin@'.front_domain(),
-            'password' => 'secret',
+            'password' => '60606060Password@#@#',
         ];
     }
 }
