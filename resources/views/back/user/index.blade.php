@@ -1,5 +1,5 @@
 @extends('layouts.back')
-@section('title', 'Admin Dashboard')
+@section('title', 'User Dashboard')
 
 @section('content')
 <!-- row -->
