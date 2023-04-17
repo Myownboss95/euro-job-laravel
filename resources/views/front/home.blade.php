@@ -163,7 +163,7 @@
                         <div class="main-banner-content">
                             <h1>Easy, fee-free banking for entrepreneurs</h1>
                             <p>Get the financial tools and insights to start, build, and grow your business.</p>
-                            <a href="#" class="btn btn-primary">Get Started</a>
+                            <a href="{{route('register')}}" class="btn btn-primary">Get Started</a>
                         </div>
                     </div>
                 </div>
@@ -182,11 +182,9 @@
                                     <i class="flaticon-piggy-bank"></i>
                                 </div>
 
-                                <h3>Transparent Pricing</h3>
-                                <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
-
-                                <a href="features-1.html" class="read-more-btn">Read More</a>
-                            </div>
+                                <h3>Transparent Dealings</h3>
+                                <p>Track and manage your business finances with ease through our online bank's transparent transaction history and account management tools.</p>
+                         </div>
                         </div>
 
                         <div class="col-lg-3 col-sm-6 col-md-6 p-0">
@@ -196,9 +194,8 @@
                                 </div>
 
                                 <h3>Fully Encrypted</h3>
-                                <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
+                                <p>Your information is 100% safe with us as every connection to our servers are made securely.</p>
 
-                                <a href="features-1.html" class="read-more-btn">Read More</a>
                             </div>
                         </div>
 
@@ -208,10 +205,9 @@
                                     <i class="flaticon-wallet"></i>
                                 </div>
 
-                                <h3>Instant Cashout</h3>
-                                <p>Lorem ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
+                                <h3>Quick Transfers</h3>
+                                <p>Our local and wire transfers gives you full control on when to send money to your beneficiaries.</p>
 
-                                <a href="features-1.html" class="read-more-btn">Read More</a>
                             </div>
                         </div>
 
@@ -222,9 +218,8 @@
                                 </div>
 
                                 <h3>Safe and Secure</h3>
-                                <p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan.</p>
+                                <p>Experience safe and secure banking for your business with our online bank's advanced security features and dedicated support team.</p>
 
-                                <a href="features-1.html" class="read-more-btn">Read More</a>
                             </div>
                         </div>
                     </div>
@@ -241,8 +236,6 @@
                         <div class="content left-content">
                             <h2>Freelancers, entrepreneurs, and sole traders</h2>
                             <div class="bar"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
                             <ul class="services-list">
                                 <li><span><i class="flaticon-check-mark"></i> Free plan available</span></li>
                                 <li><span><i class="flaticon-check-mark"></i> Full data privacy compliance</span></li>
@@ -286,8 +279,6 @@
                         <div class="content">
                             <h2>Small- to medium-sized businesses</h2>
                             <div class="bar"></div>
-                            <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua, lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-
                             <ul class="services-list">
                                 <li><span><i class="flaticon-check-mark"></i> Easy transfers</span></li>
                                 <li><span><i class="flaticon-check-mark"></i> Deposit checks instantly</span></li>
@@ -311,8 +302,6 @@
                         <div class="content left-content">
                             <h2>Large or enterprise level businesses</h2>
                             <div class="bar"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
                             <ul class="services-list">
                                 <li><span><i class="flaticon-check-mark"></i> Corporate Cards</span></li>
                                 <li><span><i class="flaticon-check-mark"></i> International Payments</span></li>
@@ -344,7 +333,8 @@
                 <div class="section-title">
                     <h2>Compare us with others</h2>
                     <div class="bar"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>
+                        Stay secure with our online banking platform featuring multi plans tomeet your needs</p>
                 </div>
 
                 <div class="comparisons-table table-responsive">
@@ -414,7 +404,7 @@
                 <div class="section-title">
                     <h2>Our Features</h2>
                     <div class="bar"></div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <p>What makes us stand out from competitors.</p>
                 </div>
 
                 <div class="row">
@@ -424,8 +414,9 @@
                                 <i class="flaticon-settings"></i>
                             </div>
 
-                            <h3>Incredible infrastructure</h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            <h3>Multi-factor authentication</h3>
+                            <p>
+                                Stay secure with our online banking platform featuring multi-factor authentication for added protection against unauthorized access.</p>
                         </div>
                     </div>
 
@@ -435,8 +426,10 @@
                                 <i class="flaticon-envelope-of-white-paper"></i>
                             </div>
 
-                            <h3>Email notifications</h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            <h3>Secure Encryption</h3>
+                            <p>
+                                
+                                Protect your personal & financial information with our secure encryption technology on our online banking platform.</p>
                         </div>
                     </div>
 
@@ -446,8 +439,8 @@
                                 <i class="flaticon-menu"></i>
                             </div>
 
-                            <h3>Simple dashboard</h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            <h3>Firewall Protection</h3>
+                            <p>Stay safe online with our bank's firewall protection for secure access to our online banking platform.</p>
                         </div>
                     </div>
 
@@ -457,8 +450,8 @@
                                 <i class="flaticon-info"></i>
                             </div>
 
-                            <h3>Information retrieval</h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            <h3>Fraud Monitoring</h3>
+                            <p>Stay protected with our bank's fraud monitoring for suspicious activity on your account on our online banking platform.</p>
                         </div>
                     </div>
 
@@ -468,8 +461,10 @@
                                 <i class="flaticon-cursor"></i>
                             </div>
 
-                            <h3>Drag and drop functionality</h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            <h3>Secure Communication
+                            </h3>
+                            <p>
+                                Enjoy secure online banking with our bank's use of military-grade SSL encryption for all connections on our online banking platform.</p>
                         </div>
                     </div>
 
@@ -479,8 +474,10 @@
                                 <i class="flaticon-alarm"></i>
                             </div>
 
-                            <h3>Deadline reminders</h3>
-                            <p>Lorem ipsum dolor amet, adipiscing, sed do eiusmod tempor incididunt ut labore dolore magna aliqua.</p>
+                            <h3>Regular Security Updates</h3>
+                            <p>
+                                
+                                Stay up-to-date with our bank's regular security updates on our online banking platform for maximum protection.</p>
                         </div>
                     </div>
                 </div>
@@ -494,10 +491,10 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="invoicing-content">
-                            <h2>Easy Payment to borrow free get a better filling at home</h2>
+                            <h2>Get the Financial Boost You Need with Our Competitive Bank Loans.</h2>
                             <div class="bar"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-                            <a href="#" class="btn btn-primary">Get Started</a>
+                            <p>Are you in need of extra financial support? Look no further! Our bank offers a variety of loan options to fit your specific needs. With competitive interest rates and flexible repayment terms, you can trust that we'll work with you to find a plan that works best for you. Apply today and get the financial boost you need to reach your goals.</p>
+                            <a href="{{route('register')}}" class="btn btn-primary">Get Started</a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-12">
@@ -528,14 +525,14 @@
 				<div class="section-title">
 					<h2>We always try to understand customers expectation</h2>
 					<div class="bar"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>We are render our services to meet our cutomers expectation at all times.</p>
 				</div>
 
 				<div class="row">
 					<div class="col-lg-3 col-sm-3 col-md-3 col-6">
 						<div class="funfact">
 							<h3><span class="odometer" data-count="180">00</span>K</h3>
-							<p>Downloaded</p>
+							<p>Accounts</p>
 						</div>
 					</div>
 
@@ -548,7 +545,7 @@
 
 					<div class="col-lg-3 col-sm-3 col-md-3 col-6">
 						<div class="funfact">
-							<h3><span class="odometer" data-count="500">00</span>+</h3>
+							<h3><span class="odometer" data-count="50">00</span>+</h3>
 							<p>Workers</p>
 						</div>
 					</div>
@@ -556,7 +553,7 @@
 					<div class="col-lg-3 col-sm-3 col-md-3 col-6">
 						<div class="funfact">
 							<h3><span class="odometer" data-count="70">00</span>+</h3>
-							<p>Contrubutors</p>
+							<p>countries</p>
 						</div>
 					</div>
 				</div>
@@ -580,7 +577,7 @@
 				<div class="section-title">
 					<h2>What customers say about Us</h2>
 					<div class="bar"></div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p>Here are some of what our customers think of us.</p>
 				</div>
 
 				<div class="feedback-slides">
@@ -592,9 +589,9 @@
 										<img src="{{asset('luvion/img/client-image/1.jpg')}}" alt="image">
 									</div>
 
-									<h3>John Lucy</h3>
-									<span>Web Developer</span>
-									<p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h3>Priscilia Taylor</h3>
+									<span>Business woman</span>
+									<p>"I love the flexibility and control this online bank gives me over my finances. The ability to access my account and manage my money from anywhere has been a game-changer for my business."</p>
 								</div>
 							</div>
 							
@@ -604,9 +601,9 @@
 										<img src="{{asset('luvion/img/client-image/2.jpg')}}" alt="image">
 									</div>
 
-									<h3>John Smith</h3>
-									<span>Web Developer</span>
-									<p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h3>John Attahman</h3>
+									<span>Worker</span>
+									<p>"I have been using this online bank for several years now, and I am extremely happy with the level of customer service and the range of features they offer. The mobile banking app is so convenient and easy to use."</p>
 								</div>
 							</div>
 							
@@ -616,9 +613,9 @@
 										<img src="{{asset('luvion/img/client-image/3.jpg')}}" alt="image">
 									</div>
 
-									<h3>Maxwel Warner</h3>
-									<span>Web Developer</span>
-									<p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h3>Tessy Warner</h3>
+									<span>Public Worker</span>
+									<p>"This online bank offers the perfect balance of security and convenience for my business. I am confident in the security of my financial information and appreciate the transparency in my transaction history."</p>
 								</div>
 							</div>
 							
@@ -629,8 +626,8 @@
 									</div>
 
 									<h3>Ross Taylor</h3>
-									<span>Web Developer</span>
-									<p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<span>Entrepreneur</span>
+									<p>I recently opened a savings account with Twelve Oaks Savings Bank, and I've been impressed with their interest rates and the ease of setting up automatic transfers. It's a great way to save for my future goals, and I know my money is in good hands.</p>
 								</div>
 							</div>
 							
@@ -641,8 +638,8 @@
 									</div>
 
 									<h3>James Anderson</h3>
-									<span>Web Developer</span>
-									<p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<span>Home Owner</span>
+									<p>I recently bought my first home with a mortgage from Twelve Oaks Savings Bank, and the process couldn't have been smoother. Their loan officers were knowledgeable and professional, and they made sure I understood every step of the process. I feel confident in my decision to choose them as my lender</p>
 								</div>
 							</div>
 							
@@ -652,9 +649,9 @@
 										<img src="{{asset('luvion/img/client-image/1.jpg')}}" alt="image">
 									</div>
 
-									<h3>Steven Smith</h3>
-									<span>Web Developer</span>
-									<p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h3>Liz Beth</h3>
+									<span>Store Owner</span>
+									<p>As a small business owner, I appreciate a bank that understands my unique needs. Twelve Oaks Savings Bank has been a great partner for me, offering flexible loans and personalized service. I wouldn't trust anyone else with my business's finances.</p>
 								</div>
 							</div>
 							
@@ -664,9 +661,9 @@
 										<img src="{{asset('luvion/img/client-image/2.jpg')}}" alt="image">
 									</div>
 
-									<h3>Steven Lucy</h3>
-									<span>Web Developer</span>
-									<p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h3>Steven Uttah</h3>
+									<span>Artist</span>
+									<p>Twelve Oaks Savings Bank is more than just a bank to me - they're a community partner. They're always involved in local events and initiatives, and they genuinely care about making a positive impact in our area. It's refreshing to see a bank with such a strong sense of corporate responsibility.</p>
 								</div>
 							</div>
 							
@@ -676,9 +673,9 @@
 										<img src="{{asset('luvion/img/client-image/3.jpg')}}" alt="image">
 									</div>
 
-									<h3>John Terry</h3>
-									<span>Web Developer</span>
-									<p>Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+									<h3>Flora-John Terry</h3>
+									<span>Business Woman</span>
+									<p>I've been a customer of Twelve Oaks Savings Bank for over a decade, and I can honestly say they've always gone above and beyond for me. From opening my first checking account to getting a home loan, their customer service is top-notch and their rates are competitive. Highly recommend!</p>
 								</div>
 							</div>
 						</div>
@@ -737,9 +734,9 @@
 			<div class="container">
 				<div class="ready-to-talk-content">
                     <h3>Ready to talk?</h3>
-                    <p>Our team is here to answer your question about Luvion</p>
-                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
-                    <span><a href="#">Or, get started now with a free trial</a></span>
+                    <p>Our team is here to answer your questions</p>
+                    <a href="{{route('front.contact')}}" class="btn btn-primary">Contact Us</a>
+                    <span><a href="{{route('login')}}">Or, Login if you have an account</a></span>
                 </div>
 			</div>
 		</section>
@@ -749,9 +746,7 @@
 		<div class="partner-area">
 			<div class="container">
 
-                <h3>More that 1.5 million businesses and organizations use Luvion</h3>
-
-				<div class="partner-inner">
+                <div class="partner-inner">
 					<div class="row align-items-center">
 						<div class="col-lg-2 col-sm-4 col-md-3 col-6">
 							<a href="#">
@@ -884,60 +879,15 @@
 		</div>
         <!-- End Partner Area -->
 
-        <!-- Start App Download Area -->
-        <section class="app-download-area">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 col-md-12">
-                        <div class="app-image">
-                            <div class="main-image">
-                                <img src="{{asset('luvion/img/mobile-app1.png')}}" class="wow animate__animated animate__fadeInLeft" alt="image">
-                                <img src="{{asset('luvion/img/mobile-app2.png')}}" class="wow animate__animated animate__fadeInUp" alt="image">
-                            </div>
-
-                            <div class="main-mobile-image">
-                                <img src="{{asset('luvion/img/main-mobile.png')}}" class="wow animate__animated animate__fadeInUp" alt="image">
-                            </div>
-
-                            <div class="circle-img">
-                                <img src="{{asset('luvion/img/circle.png')}}" alt="image">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-md-12">
-                        <div class="app-download-content">
-                            <h2>You can find all the thing you need to payout</h2>
-                            <div class="bar"></div>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
-
-                            <div class="btn-box">
-                                <a href="#" class="app-store-btn">
-                                    <i class="flaticon-apple"></i>
-                                    Download on
-                                    <span>App Store</span>
-                                </a>
-
-                                <a href="#" class="play-store-btn">
-                                    <i class="flaticon-play-store"></i>
-                                    Download on
-                                    <span>Google play</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- End App Download Area -->
+      
 
         <!-- Start Account Create Area -->
         <section class="account-create-area">
             <div class="container">
                 <div class="account-create-content">
                     <h2>Apply for an account in minutes</h2>
-                    <p>Get your Luvion account today!</p>
-                    <a href="login.html" class="btn btn-primary">Get Your Luvion Account</a>
+                    <p>Get your {{config('app.name')}} account today!</p>
+                    <a href="{{route('register')}}" class="btn btn-primary">Get Your Account</a>
                 </div>
             </div>
         </section>
@@ -952,7 +902,7 @@
 							<div class="logo">
 								<a href="index.html" class="black-logo"><img src="{{asset('luvion/img/black-logo.png')}}" alt="logo"></a>
 								<a href="index.html" class="white-logo"><img src="{{asset('luvion/img/logo.png')}}" alt="logo"></a>
-                                <p>Quis ipsum suspendisse ultrices gravida commodo. Risus commodo veliliee vel viverra maecenas accumsan lacus vel facilisis.</p>
+                                <p>Experience the convenience and security of online banking with our bank. Manage your finances, track your transaction history and access your account from anywhere. Enjoy advanced security features and dedicated support for your business needs..</p>
 							</div>
                             
 							<ul class="social-links">
@@ -970,10 +920,9 @@
                             
 							<ul class="list">
 								<li><a href="about.html">About Us</a></li>
-								<li><a href="features-2.html">Services</a></li>
-								<li><a href="features-1.html">Features</a></li>
-								<li><a href="pricing.html">Our Pricing</a></li>
-								<li><a href="blog-1.html">Latest News</a></li>
+								<li><a href="features-2.html">Terms</a></li>
+								<li><a href="features-1.html">Register</a></li>
+								<li><a href="pricing.html">Login</a></li>
 							</ul>
 						</div>
 					</div>
@@ -984,9 +933,6 @@
                             
 							<ul class="list">
 								<li><a href="faq.html">FAQ's</a></li>
-								<li><a href="#">Privacy Policy</a></li>
-								<li><a href="#">Terms & Condition</a></li>
-								<li><a href="#">Community</a></li>
 								<li><a href="contact.html">Contact Us</a></li>
 							</ul>
 						</div>
@@ -997,17 +943,16 @@
 							<h3>Address</h3>
 							
 							<ul class="footer-contact-info">
-								<li><span>Location:</span> 27 Division St, New York, NY 10002, USA</li>
-								<li><span>Email:</span> <a href="https://templates.envytheme.com/cdn-cgi/l/email-protection#1d75787171725d71686b747273337e7270"><span class="__cf_email__" data-cfemail="c0a8a5acacaf80acb5b6a9afaeeea3afad">[email&#160;protected]</span></a></li>
-								<li><span>Phone:</span> <a href="tel:+321984754">+ (321) 984 754</a></li>
-								<li><span>Fax:</span> <a href="tel:+12129876543">+1-212-9876543</a></li>
+								<li><span>Location:</span> 11353 12 Oaks Way, North Palm Beach, FL 33408, United States</li>
+								<li><span>Email:</span> <a href="mailto:{{'hello@'.front_domain()}}"><span class="__cf_email__" >{{'hello@'.front_domain()}}</span></a></li>
+								<li><span>Phone:</span> <a href="tel:+14232814506"> +1 423 281 4506</a></li>
                             </ul>
 						</div>
 					</div>
 				</div>
 
                 <div class="copyright-area">
-                    <p>Copyright @<script data-cfasync="false" src="https://templates.envytheme.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Luvion is proudly created by <a href="https://envytheme.com/" target="_blank"> EnvyTheme</a></p>
+                    <p>Copyright @<script data-cfasync="false" src="https://templates.envytheme.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Powered by  <a href="#" target="_blank"> Twelve Oaks Corporation</a></p>
                 </div>
             </div>
             
