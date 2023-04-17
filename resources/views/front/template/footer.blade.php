@@ -21,31 +21,30 @@
 
       <div class="col-lg-3 col-sm-6 col-md-6">
         <div class="single-footer-widget">
-                        <h3>Company</h3>
+                        <h3 style="margin-bottom: 55px">Company</h3>
                         
           <ul class="list">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="features-2.html">Terms</a></li>
-            <li><a href="features-1.html">Register</a></li>
-            <li><a href="pricing.html">Login</a></li>
+            <li><a href="{{route('front.about')}}">About Us</a></li>
+            <li><a href="{{route('register')}}">Register</a></li>
+            <li><a href="{{route('login')}}">Login</a></li>
           </ul>
         </div>
       </div>
 
       <div class="col-lg-3 col-sm-6 col-md-6">
         <div class="single-footer-widget">
-                        <h3>Support</h3>
+                        <h3 style="margin-bottom: 55px">Support</h3>
                         
           <ul class="list">
-            <li><a href="faq.html">FAQ's</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="{{route('front.help')}}">FAQ's</a></li>
+            <li><a href="{{route('front.contact')}}">Contact Us</a></li>
           </ul>
         </div>
       </div>
 
       <div class="col-lg-3 col-sm-6 col-md-6">
         <div class="single-footer-widget">
-          <h3>Address</h3>
+          <h3 style="margin-bottom: 55px">Address</h3>
           
           <ul class="footer-contact-info">
             <li><span>Location:</span> 11353 12 Oaks Way, North Palm Beach, FL 33408, United States</li>
