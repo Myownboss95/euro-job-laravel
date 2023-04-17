@@ -62,91 +62,11 @@
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li class="nav-item"><a href="#" class="nav-link active">Home <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="index.html" class="nav-link active">Banking & Payment Processing</a></li>
-
-                                        <li class="nav-item"><a href="index-2.html" class="nav-link">Loan Providers</a></li>
-
-                                        <li class="nav-item"><a href="index-3.html" class="nav-link">Digital Banking</a></li>
-
-                                        <li class="nav-item"><a href="index-4.html" class="nav-link">Financial Service Provider</a></li>
-
-                                        <li class="nav-item"><a href="index-5.html" class="nav-link">Bankers & Entrepreneurs</a></li>
-
-                                        <li class="nav-item"><a href="index-6.html" class="nav-link">Social Finance Agency</a></li>
-
-                                        <li class="nav-item"><a href="index-7.html" class="nav-link">Currency Transfer Provider</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-
-                                <li class="nav-item"><a href="#" class="nav-link">Features <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="features-1.html" class="nav-link">Features Style One</a></li>
-
-                                        <li class="nav-item"><a href="features-2.html" class="nav-link">Features Style Two</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item"><a href="#" class="nav-link">Pages <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="#" class="nav-link">About Us</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a href="about.html" class="nav-link">About Style One</a></li>
-
-                                                <li class="nav-item"><a href="about-two.html" class="nav-link">About Style Two</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item"><a href="#" class="nav-link">Features</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="nav-item"><a href="features-1.html" class="nav-link">Features Style One</a></li>
-        
-                                                <li class="nav-item"><a href="features-2.html" class="nav-link">Features Style Two</a></li>
-                                            </ul>
-                                        </li>
-
-                                        <li class="nav-item"><a href="team.html" class="nav-link">Team</a></li>
-
-                                        <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-
-                                        <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
-
-                                        <li class="nav-item"><a href="sign-up.html" class="nav-link">Register</a></li>
-
-                                        <li class="nav-item"><a href="error-404.html" class="nav-link">404 Error</a></li>
-
-                                        <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
-
-                                        <li class="nav-item"><a href="how-it-works.html" class="nav-link">How It Works</a></li>
-
-                                        <li class="nav-item"><a href="personal.html" class="nav-link">Personal</a></li>
-
-                                        <li class="nav-item"><a href="business.html" class="nav-link">Business</a></li>
-
-                                        <li class="nav-item"><a href="contact-two.html" class="nav-link">Contact Style Two</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-
-                                <li class="nav-item"><a href="#" class="nav-link">Blog <i class="fas fa-chevron-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li class="nav-item"><a href="blog-1.html" class="nav-link">Blog Grid</a></li>
-
-                                        <li class="nav-item"><a href="blog-2.html" class="nav-link">Blog Right Sidebar</a></li>
-
-                                        <li class="nav-item"><a href="single-blog.html" class="nav-link">Blog Details</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+                                @include('front.template.menu')
                             </ul>
 
                             <div class="others-options">
-                                <a href="login.html" class="login-btn"><i class="flaticon-user"></i> Log In</a>
+                                <a href="{{route('login')}}" class="login-btn"><i class="flaticon-user"></i> Log In</a>
                             </div>
                         </div>
                     </nav>
@@ -893,72 +813,7 @@
         </section>
         <!-- End Account Create Area -->
         
-        <!-- Start Footer Area -->
-		<footer class="footer-area">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-3 col-sm-6 col-md-6">
-						<div class="single-footer-widget">
-							<div class="logo">
-								<a href="/" class="black-logo"><img src="{{asset('logo.png')}}" alt="logo" style="max-width: 250px"></a>
-								<a href="/" class="white-logo"><img src="{{asset('logo-light.png')}}"style="max-width: 250px" alt="logo"></a>
-                                <p>Experience the convenience and security of online banking with our bank. Manage your finances, track your transaction history and access your account from anywhere. Enjoy advanced security features and dedicated support for your business needs..</p>
-							</div>
-                            
-							<ul class="social-links">
-								<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
-								<li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-sm-6 col-md-6">
-						<div class="single-footer-widget">
-                            <h3>Company</h3>
-                            
-							<ul class="list">
-								<li><a href="about.html">About Us</a></li>
-								<li><a href="features-2.html">Terms</a></li>
-								<li><a href="features-1.html">Register</a></li>
-								<li><a href="pricing.html">Login</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-sm-6 col-md-6">
-						<div class="single-footer-widget">
-                            <h3>Support</h3>
-                            
-							<ul class="list">
-								<li><a href="faq.html">FAQ's</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
-							</ul>
-						</div>
-					</div>
-
-					<div class="col-lg-3 col-sm-6 col-md-6">
-						<div class="single-footer-widget">
-							<h3>Address</h3>
-							
-							<ul class="footer-contact-info">
-								<li><span>Location:</span> 11353 12 Oaks Way, North Palm Beach, FL 33408, United States</li>
-								<li><span>Email:</span> <a href="mailto:{{'hello@'.front_domain()}}"><span class="__cf_email__" >{{'hello@'.front_domain()}}</span></a></li>
-								<li><span>Phone:</span> <a href="tel:+14232814506"> +1 423 281 4506</a></li>
-                            </ul>
-						</div>
-					</div>
-				</div>
-
-                <div class="copyright-area">
-                    <p>Copyright @<script data-cfasync="false" src="https://templates.envytheme.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> Powered by  <a href="#" target="_blank"> Twelve Oaks Corporation</a></p>
-                </div>
-            </div>
-            
-            <div class="map-image"><img src="{{asset('luvion/img/map.png')}}" alt="map"></div>
-		</footer>
-        <!-- End Footer Area -->
+        @include('front.template.footer')
         
         <div class="go-top"><i class="fas fa-arrow-up"></i></div>
 

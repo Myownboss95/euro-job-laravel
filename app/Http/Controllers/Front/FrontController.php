@@ -15,7 +15,7 @@ class FrontController extends Controller
 
     public function about()
     {
-        return view('front.about');
+        return view('front.about-us');
     }
 
     public function contact()
@@ -26,6 +26,6 @@ class FrontController extends Controller
 
     public function help()
     {
-        return view('front.help');
+        return view('front.faqs');
     }
 }

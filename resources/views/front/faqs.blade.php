@@ -1,110 +1,261 @@
-@include('front.template.header')
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <div class="row">
-        <div class="col-md-6 p-5" style="padding:30px;padding-top:3px;">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      {{__('How do I register and Start?')}}
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        {{__('The entire registration process is very easy: Just press the "register" button on the home page of the website. Once registered, you can log in to your dashboard.')}}
+<!doctype html>
+<html lang="zxx" class="theme-light">
+    
+<!-- Mirrored from templates.envytheme.com/luvion/default/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 11:32:48 GMT -->
+<head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Links of CSS files -->
+        <link rel="stylesheet" href="{{asset('luvion/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/animate.min.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/fontawesome.min.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/flaticon.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/magnific-popup.min.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/nice-select.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/slick.min.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/owl.carousel.min.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/owl.theme.default.min.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/meanmenu.css')}}">
+		<link rel="stylesheet" href="{{asset('luvion/css/odometer.min.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/style.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/responsive.css')}}">
+        <link rel="stylesheet" href="{{asset('luvion/css/dark-style.css')}}">
+
+        <title>FAQs - {{config('app.name')}} </title>
+
+        <link rel="icon" type="image/png" href="{{asset('luvion/img/favicon.png')}}')}}">
+    </head>
+
+        <!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="shadow"></div>
+                <div class="box"></div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+
+        <!-- Start Navbar Area -->
+        <div class="navbar-area">
+            <div class="luvion-responsive-nav">
+                <div class="container">
+                    <div class="luvion-responsive-menu">
+                        <div class="logo">
+                            <a href="/" style="max-width: 250px">
+                                <img src="{{asset('logo-light.png')}}" alt="logo">
+                                <img src="{{asset('logo.png')}}')}}" alt="logo">
+                            </a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                     {{__('Do you have limits for any amount?')}}
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        {{__('You can withdraw up to 95% of your total earned profits.')}}
-                    </div>
-                  </div>
+            </div>
+
+            <div class="luvion-nav">
+                <div class="container">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <a class="navbar-brand" href="/" style="max-width: 250px">
+                            <img src="{{asset('logo-light.png')}}" alt="logo">
+                            <img src="{{asset('luvion/img/black-logo.png')}}')}}" alt="logo">
+                        </a>
+
+                        <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                @include('front.template.menu')
+                            </ul>
+
+                            <div class="others-options">
+                                <a href="{{route('login')}}" class="login-btn"><i class="flaticon-user"></i> Log In</a>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                     {{__('How soon will my deposit be added to my account?')}}
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        {{__("Your account will be updated instantly as you deposit. For Bitcoin deposits you should send actual amount to shown Bitcoin wallet, and your deposit will be added after confirmations ,it can take from 10 minutes up to 1 hour.")}}
-                    </div>
-                  </div>
+            </div>
+        </div>
+        <!-- End Navbar Area -->
+        
+        <!-- Start Page Title Area -->
+        <div class="page-title-area item-bg1 jarallax" data-jarallax='{"speed": 0.3}'>
+            <div class="container">
+                <div class="page-title-content">
+                    <h2>FAQs</h2>
+                    <p>Questions answered by {{config('app.name')}}</p>
                 </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-                       {{__('Can I invest several deposits at once?')}}
-                      </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        {{__('Yes, you can make a deposit from your account balance. Simply log into your member account, click "Deposit", select Payment System and enter amount. Then click on "Make Deposit" button.')}}
+            </div>
+        </div>
+        <!-- End Page Title Area -->
+        <section class="faq-area ptb-70">
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-5 col-md-12">
+                      <div class="faq-content">
+                          <h2>Frequently Asked Questions</h2>
+                          <div class="bar"></div>
+                          <p>Clearing Up Common Confusions.</p>
+
+                          <div class="faq-image">
+                              <img src="{{asset('luvion/img/faq.png')}}" alt="image">
+                          </div>
                       </div>
-                    </div>
+                  </div>
+
+                  <div class="col-lg-7 col-md-12">
+                      <div class="faq-accordion">
+                          <ul class="accordion">
+                              <li class="accordion-item">
+                                  <a class="accordion-title active" href="javascript:void(0)">
+                                      <i class="fas fa-plus"></i>
+                                      What types of accounts can I open with {{config('app.name')}} online?
+                                  </a>
+
+                                  <p class="accordion-content show">You can open a variety of accounts with {{config('app.name')}} online such as checking, savings, money market accounts and more.</p>
+                              </li>
+
+                              <li class="accordion-item">
+                                  <a class="accordion-title" href="javascript:void(0)">
+                                      <i class="fas fa-plus"></i>
+                                      Is {{config('app.name')}}'s online banking safe and secure?
+                                  </a>
+
+                                  <p class="accordion-content">
+                                      Yes, {{config('app.name')}}'s online banking is safe and secure. We use advanced encryption and multi-factor authentication to protect your personal and financial information.
+                                  </p>
+                              </li>
+
+                              <li class="accordion-item">
+                                  <a class="accordion-title" href="javascript:void(0)">
+                                      <i class="fas fa-plus"></i>
+                                      How do I access my account information with {{config('app.name')}} online?
+                                  </a>
+
+                                  <p class="accordion-content">
+                                      You can access your account information by logging into the {{config('app.name')}} online banking portal using your email and password.
+                                  </p>
+                              </li>
+
+                              <li class="accordion-item">
+                                  <a class="accordion-title" href="javascript:void(0)">
+                                      <i class="fas fa-plus"></i>
+                                      What are the benefits of using {{config('app.name')}}'s online banking?
+                                  </a>
+
+                                  <p class="accordion-content">
+                                      The benefits of {{config('app.name')}}'s online banking include the ability to check account balances, view transaction history, transfer money between accounts, pay bills, and deposit checks remotely.
+                                  </p>
+                              </li>
+
+                              <li class="accordion-item">
+                                  <a class="accordion-title" href="javascript:void(0)">
+                                      <i class="fas fa-plus"></i>
+                                       Can I view my account history with {{config('app.name')}} online?
+                                  </a>
+
+                                  <p class="accordion-content">
+                                      Yes, you can view your account history with {{config('app.name')}} online by logging into the online banking portal.
+                                  </p>
+                              </li>
+
+                              <li class="accordion-item">
+                                  <a class="accordion-title" href="javascript:void(0)">
+                                      <i class="fas fa-plus"></i>
+                                      Can I deposit checks remotely using {{config('app.name')}}'s online banking?
+                                  </a>
+
+                                  <p class="accordion-content">
+                                       Yes, {{config('app.name')}} offers mobile check deposit feature which allows you to deposit checks remotely using your mobile device.
+                                  </p>
+                              </li>
+
+                              <li class="accordion-item">
+                                  <a class="accordion-title" href="javascript:void(0)">
+                                      <i class="fas fa-plus"></i>
+                                      Can I transfer money between accounts using {{config('app.name')}}'s online banking?
+                                  </a>
+
+                                  <p class="accordion-content">
+                                      Yes, you can transfer money between accounts using {{config('app.name')}}'s online banking.
+                                  </p>
+                              </li>
+
+                              <li class="accordion-item">
+                                  <a class="accordion-title" href="javascript:void(0)">
+                                      <i class="fas fa-plus"></i>
+                                      Is it possible to open an account with {{config('app.name')}} online?
+                                  </a>
+
+                                  <p class="accordion-content">
+                                      Yes, {{config('app.name')}} allows you to open an account online, with the option of e-signing the required documents.
+                                  </p>
+                              </li>
+
+                              <li class="accordion-item">
+                                  <a class="accordion-title" href="javascript:void(0)">
+                                      <i class="fas fa-plus"></i>
+                                       Is there customer support available for {{config('app.name')}}'s online banking?
+                                  </a>
+
+                                  <p class="accordion-content">
+                                      Yes, {{config('app.name')}} has a dedicated customer support team available to assist you with any issues or questions related to your online banking account.
+                                  </p>
+                              </li>
+                          </ul>
+                      </div>
                   </div>
               </div>
-        </div>
-        <div class="col-md-6 p-5" style="padding:30px;padding-top:3px;">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingFive">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                      {{__("How to Withdraw Money?")}}
-                    </button>
-                  </h2>
-                  <div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        {{__('You need to go to your dashboard then click "Request withdrawal". Then select balance, and select your processor and then click "REQUEST". Our system will send money Within 24 Hours after request.')}}
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                        {{__("What's the minimum withdrawal amount?")}}
-                    </button>
-                  </h2>
-                  <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        {{__("Your minimum withdraw amount depends on your earnings.")}}
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingSeven">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    {{__("What payment processors can be used to fund a wallet?")}}
-                    </button>
-                  </h2>
-                  <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        {{__('You can fund your wallet using Crypto currencies or Bank Transfer.')}}
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingEight">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        {{__("How long will my withdraw get to me?")}}
-                      </button>
-                    </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
-                      <div class="accordion-body">
-                        {{__('Withdraws will be in your wallets or bank account in less than 2 hours.')}}
-                      </div>
-                    </div>
+
+              <div class="faq-contact">
+                  <div class="section-title">
+                      <h2>Do You Have More Questions</h2>
+                      <div class="bar"></div>
+                      <p>Send us a message on our contact page or chat with a support agent.</p>
+
+                      <a href="{{route('front.contact')}}" class="btn btn-primary mt-5">Contact Us</a>
                   </div>
               </div>
+          </div>
+      </section>
+        <section class="account-create-area">
+        <div class="container">
+            <div class="account-create-content">
+                <h2>Apply for an account in minutes</h2>
+                <p>Get your {{config('app.name')}} account today!</p>
+                <a href="{{route('register')}}" class="btn btn-primary">Get Your {{config('app.name')}} Account</a>
+            </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-@include('front.template.footer')
+    </section>
+    <!-- End Account Create Area -->
+        
+        </div>        
+       @include('front.template.footer')
+        
+        <div class="go-top"><i class="fas fa-arrow-up"></i></div>
+
+        <!-- Dark/Light Toggle -->
+		<div class="dark-version">
+            <label id="switch" class="switch">
+                <input type="checkbox" onchange="toggleTheme()" id="slider">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <!-- Links of JS files -->
+        <script src="{{asset('luvion/js/jquery.min.js')}}"></script>
+        <script src="{{asset('luvion/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{asset('luvion/js/meanmenu.js')}}"></script>
+        <script src="{{asset('luvion/js/nice-select.min.js')}}"></script>
+        <script src="{{asset('luvion/js/slick.min.js')}}"></script>
+        <script src="{{asset('luvion/js/magnific-popup.min.js')}}"></script>
+		<script src="{{asset('luvion/js/appear.min.js')}}"></script>
+        <script src="{{asset('luvion/js/odometer.min.js')}}"></script>
+        <script src="{{asset('luvion/js/owl.carousel.min.js')}}"></script>
+        <script src="{{asset('luvion/js/parallax.min.js')}}"></script>
+        <script src="{{asset('luvion/js/wow.min.js')}}"></script>
+        <script src="{{asset('luvion/js/form-validator.min.js')}}"></script>
+        <script src="{{asset('luvion/js/contact-form-script.js')}}"></script>
+        <script src="{{asset('luvion/js/jquery.ajaxchimp.min.js')}}"></script>
+        <script src="{{asset('luvion/js/main.js')}}"></script>
+    </body>
+
+<!-- Mirrored from templates.envytheme.com/luvion/default/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Nov 2022 11:32:54 GMT -->
+</html>
