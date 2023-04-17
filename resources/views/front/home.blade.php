@@ -44,8 +44,7 @@
                     <div class="luvion-responsive-menu">
                         <div class="logo">
                             <a href="/" style="max-width: 250px">
-                                <img src="{{asset('logo-light.png')}}" alt="logo">
-                                <img src="{{asset('logo.png')}}" alt="logo">
+                                @include('front.template.logo')
                             </a>
                         </div>
                     </div>

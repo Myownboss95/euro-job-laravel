@@ -44,8 +44,7 @@
                     <div class="luvion-responsive-menu">
                         <div class="logo">
                             <a href="/" style="max-width: 250px">
-                                <img src="{{asset('logo-light.png')}}" alt="logo">
-                                <img src="{{asset('logo.png')}}')}}" alt="logo">
+                              @include('front.template.logo')
                             </a>
                         </div>
                     </div>
@@ -56,8 +55,7 @@
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
                         <a class="navbar-brand" href="/" style="max-width: 250px">
-                            <img src="{{asset('logo-light.png')}}" alt="logo">
-                            <img src="{{asset('luvion/img/black-logo.png')}}')}}" alt="logo">
+                          @include('front.template.logo')
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
