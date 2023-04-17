@@ -18,7 +18,7 @@ function profile_picture()
 {
     $image = 'default.png';
     if($user = auth('user')->user()){
-        $image = $user->image;
+        $image = $user->image?? 'default.png';
     }
     return asset(config('dir.profile').$image);
 }
