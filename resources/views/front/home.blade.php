@@ -43,9 +43,9 @@
                 <div class="container">
                     <div class="luvion-responsive-menu">
                         <div class="logo">
-                            <a href="index.html">
-                                <img src="{{asset('luvion/img/logo.png')}}" alt="logo">
-                                <img src="{{asset('luvion/img/black-logo.png')}}" alt="logo">
+                            <a href="/" style="max-width: 250px">
+                                <img src="{{asset('logo-light.png')}}" alt="logo">
+                                <img src="{{asset('logo.png')}}" alt="logo">
                             </a>
                         </div>
                     </div>
@@ -55,9 +55,9 @@
             <div class="luvion-nav">
                 <div class="container">
                     <nav class="navbar navbar-expand-md navbar-light">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="{{asset('luvion/img/logo.png')}}" alt="logo">
-                            <img src="{{asset('luvion/img/black-logo.png')}}" alt="logo">
+                        <a class="navbar-brand" href="/" style="max-width: 250px">
+                            <img src="{{asset('logo-light.png')}}" alt="logo">
+                            <img src="{{asset('logo.png')}}" alt="logo">
                         </a>
 
                         <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
@@ -900,8 +900,8 @@
 					<div class="col-lg-3 col-sm-6 col-md-6">
 						<div class="single-footer-widget">
 							<div class="logo">
-								<a href="index.html" class="black-logo"><img src="{{asset('luvion/img/black-logo.png')}}" alt="logo"></a>
-								<a href="index.html" class="white-logo"><img src="{{asset('luvion/img/logo.png')}}" alt="logo"></a>
+								<a href="/" class="black-logo"><img src="{{asset('logo.png')}}" alt="logo" style="max-width: 250px"></a>
+								<a href="/" class="white-logo"><img src="{{asset('logo-light.png')}}"style="max-width: 250px" alt="logo"></a>
                                 <p>Experience the convenience and security of online banking with our bank. Manage your finances, track your transaction history and access your account from anywhere. Enjoy advanced security features and dedicated support for your business needs..</p>
 							</div>
                             
