@@ -33,7 +33,7 @@ class ActivationController extends Controller
 
         $valid['image'] = str_replace(' ', '', rand() . now()->toDateTimeString() . '.' . $valid['image']->extension());
         $request->file('image')->move(public_path(config('dir.profile')), $valid['image']);
-        dd($valid);
+        // dd($valid);
         $valid['dob'] = Carbon::createFromFormat('Y-m-d', $valid['dob']);
         $valid['account_number'] = generateAccountNumber();
         
