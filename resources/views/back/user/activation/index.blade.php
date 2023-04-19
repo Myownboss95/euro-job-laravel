@@ -12,7 +12,7 @@
             <input type="text" class="form-control" placeholder="Lastname" name="lastname" value="{{auth('user')->user()->lastname}}" readonly disabled>
         </div>
         <div class="mb-3 form-group col-md-6">
-            <input type="text" class="form-control" placeholder="Middlename (optional)" name="middlename">
+            <input type="text" class="form-control" value="{{ old('middlename') ?? '' }}" placeholder="Middlename (optional)" name="middlename">
         </div>
 
         <div class="mb-3 form-group col-md-6">
@@ -20,7 +20,7 @@
         </div>
 
         <div class="mb-3 form-group col-md-6">
-            <input type="text" class="form-control" placeholder="Phone ex. +1234567910" name="phone">
+            <input type="text" class="form-control" value="{{ old('dob') }}" placeholder="Phone ex. +1234567910" name="phone">
         </div>
 
         <div class="mb-3 form-group col-md-6">
