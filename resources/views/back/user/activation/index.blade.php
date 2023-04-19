@@ -20,7 +20,7 @@
         </div>
 
         <div class="mb-3 form-group col-md-6">
-            <input type="text" class="form-control" value="{{ old('dob') }}" placeholder="Phone ex. +1234567910" name="phone">
+            <input type="text" class="form-control" value="{{ old('phone') }}" placeholder="Phone ex. +1234567910" name="phone">
         </div>
 
         <div class="mb-3 form-group col-md-6">
