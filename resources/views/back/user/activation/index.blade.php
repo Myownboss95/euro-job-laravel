@@ -25,7 +25,7 @@
 
         <div class="mb-3 form-group col-md-6">
             <input name="dob" value="{{ old('dob') }}" type="text" class="form-control"
-                placeholder="Date of Birth" id="mdate">
+                placeholder="Date of Birth">
         </div>
 
         <div class="mb-3 form-group col-md-6">
