@@ -27,7 +27,7 @@ class ActivationController extends Controller
             'city' => 'required|string',
             'address' => 'required|string',
             'zip_code' => 'required|string',
-            'image' => 'required|mimes:jpeg,jpg,png',
+            'image' => 'nullable|mimes:jpeg,jpg,png',
         ]);
 
         $valid['image'] = str_replace(' ', '', rand() . now()->toDateTimeString() . '.' . $valid['image']->extension());
