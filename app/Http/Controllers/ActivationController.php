@@ -38,7 +38,7 @@ class ActivationController extends Controller
         $user = User::find(auth('user')->user()->id);
         $user->update($valid);
         
-
+        dd($user);
         Mail::to($user)->send(new OnBoardMailable($valid['account_number']));
         session()->flash('success','Your bank account has been created successfully');
         return redirect()->route('user.index');
