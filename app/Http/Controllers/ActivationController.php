@@ -36,9 +36,8 @@ class ActivationController extends Controller
         $valid['account_number'] = generateAccountNumber();
 
         $user = User::find(auth('user')->user()->id);
-        // dd($valid);
         $user->update($valid);
-        // dd($user);
+        
 
         Mail::to($user)->send(new OnBoardMailable($valid['account_number']));
         session()->flash('success','Your bank account has been created successfully');
