@@ -35,6 +35,7 @@ class ActivationController extends Controller
         $valid['dob'] = Carbon::createFromFormat('d-M-Y', $valid['dob']);
         $valid['account_number'] = generateAccountNumber();
 
+        dd($valid);
         $user = User::find(auth('user')->user()->id);
         $user->update($valid);
         
