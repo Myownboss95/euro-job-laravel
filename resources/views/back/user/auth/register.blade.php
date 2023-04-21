@@ -17,6 +17,14 @@
             <x-error :key="'email'" />
         </div>
         <div class="mb-3">
+            <select name="gender" id="" class="form-control-lg form-select">
+                <option value="">Select Gender</option>
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+            <x-error key="gender" />
+        </div>
+        <div class="mb-3">
             <input type="password" name="password" class="form-control" placeholder="Password">
             <x-error :key="'password'" />
         </div>
