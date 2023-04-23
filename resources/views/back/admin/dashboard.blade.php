@@ -107,7 +107,7 @@
 
                                     <tr>
                                         <td>{{$withdrawal->reference}}</td>
-                                        <td>{{format_money($deposit->amount))}}</td>
+                                        <td>{{format_money($deposit->amount)}}</td>
                                         <td>{{$withdrawal->user->name}}</td>
                                         <td>{{$withdrawal->created_at->toDateTimeString()}}</td>
                                     </tr>
