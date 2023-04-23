@@ -13,6 +13,7 @@
         </div>
         <div class="mb-3 form-group col-md-6">
             <input type="text" class="form-control" value="{{ old('middlename') ?? '' }}" placeholder="Middlename (optional)" name="middlename">
+            <x-error :key="'middlename'" />
         </div>
 
         <div class="mb-3 form-group col-md-6">
@@ -21,11 +22,13 @@
 
         <div class="mb-3 form-group col-md-6">
             <input type="text" class="form-control" value="{{ old('phone') }}" placeholder="Phone ex. +1234567910" name="phone">
+            <x-error :key="'phone'" />
         </div>
 
         <div class="mb-3 form-group col-md-6">
             <input name="dob" value="{{ old('dob') }}" type="date" class="form-control"
                 placeholder="Date of Birth">
+                <x-error :key="'dob'" />
         </div>
 
         <div class="mb-3 form-group col-md-6">
@@ -35,33 +38,33 @@
                     <option value="{{ $account_type }}">{{ $account_type}}</option>
                 @endforeach
             </select>
-            <x-error key="account_type" />
+            <x-error :key="'account_type'" />
         </div>
 
         <div class="mb-3 form-group col-md-6">
             <input type="country" class="form-control" name="country" value="{{ old('country') }}" placeholder="Country">
-            <x-error key="country" />
+            <x-error :key="'country'" />
         </div>
 
         <div class="mb-3 form-group col-md-6">
             <input type="state" class="form-control" name="state" value="{{ old('state') }}" placeholder="State / Province">
-            <x-error key="state" />
+            <x-error :key="'state'" />
         </div>
 
         <div class="mb-3 form-group col-md-6">
             <input type="city" class="form-control" name="city" value="{{ old('city') }}" placeholder="City">
-            <x-error key="city" />
+            <x-error :key="'city'" />
         </div>
 
         <div class="mb-3 form-group col-md-9">
             <input type="address" class="form-control" name="address" value="{{ old('address') }}" placeholder="Address">
-            <x-error key="address" />
+            <x-error :key="'address'" />
         </div>
 
         <div class="mb-3 form-group col-md-3">
             <input type="zip_code" class="form-control" name="zip_code"
                 value="{{ old('zip_code') }}" placeholder="Zip code">
-            <x-error key="zip_code" />
+            <x-error :key="'zip_code'" />
         </div>
 
 
@@ -76,7 +79,7 @@
                         Upload
                     </span>
                 </label>
-                <x-error key="image" />
+                <x-error :key="'image'" />
             </div>
             <div class="col-6" id="preview">
 
