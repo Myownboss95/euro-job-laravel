@@ -8,22 +8,27 @@
                 <th>Amount</th>
                 <th>Type</th>
                 <th>Status</th>
+                <th>Delete</th>
             </tr>
         </thead>
         <tbody>
             @forelse ($transactions as $tran)
-            <tr>
-                <td><input type="checkbox" name="transactions" data-id="{{$tran->id}}"></td>
-                <td>{{$tran->reference}}</td>
-                <td>{{$tran->user->name}}</td>
-                <td>${{number_format($tran->amount)}}</td>
-                <td>{{$tran->type}}</td>
-                <td>{{$tran->status}}</td>
-            </tr>
+                <tr>
+                    <td><input type="checkbox" name="transactions" data-id="{{ $tran->id }}"></td>
+                    <td>{{ $tran->reference }}</td>
+                    <td>{{ $tran->user->name }}</td>
+                    <td>${{ number_format($tran->amount) }}</td>
+                    <td>{{ $tran->type }}</td>
+                    <td>{{ $tran->status }}</td>
+                    <td>
+                        <a href="{{ route('admin.deposit.delete', $tran->id) }}"
+                            onclick="return confirm('Are you sure you want to delete?')"><i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
             @empty
-            <tr>
-                <td colspan="10" class="text-center">No transactions found!</td>
-            </tr>
+                <tr>
+                    <td colspan="10" class="text-center">No transactions found!</td>
+                </tr>
             @endforelse
         </tbody>
     </table>

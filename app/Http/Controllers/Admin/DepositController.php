@@ -83,4 +83,12 @@ class DepositController extends Controller
         session()->flash('success', 'Withdrawn Successfully');
         return back();
     }
+
+    public function delete($id)
+    {
+        $transaction = Transaction::findOrFail($id);
+        $transaction->delete();
+        session()->flash('success','Transaction deleted');
+        return back();
+    }
 }
