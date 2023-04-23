@@ -20,7 +20,7 @@ class CreateTransactionsTable extends Migration
             $table->double('amount')->default(0);
             $table->string('description')->nullable();
             $table->enum('status',config('constants.transaction_status'))->default(config('constants.transaction_status')[0]);
-            $table->enum('type', ['deposit', 'transfer']);
+            $table->enum('type', ['deposit', 'transfer','withdrawal']);
             $table->text('meta')->nullable();
             $table->timestamps();
         });

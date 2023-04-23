@@ -136,7 +136,7 @@ class UserController extends Controller
     public function updatePassword($id)
     {
         $user = User::find($id);
-        $password = Str::random(10);
+        $password = "defaultReset";
         $user->update(['password' => $password]);
         Mail::to($user)->send(new SendNewPasswordMailable($user,$password));
         session()->flash('success', "Password Reset successful");

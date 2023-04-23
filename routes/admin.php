@@ -26,6 +26,8 @@ Route::middleware('auth:admin')->group(function () {
 
     Route::get('deposit', [DepositController::class, 'index'])->name('deposit.index');
     Route::post('deposit', [DepositController::class, 'deposit'])->name('deposit.deposit');
+    Route::get('withdraw', [DepositController::class, 'withdraw_view'])->name('deposit.withdraw.index');
+    Route::post('withdraw', [DepositController::class, 'withdraw'])->name('deposit.withdraw');
 
     Route::get('users', [UserController::class, 'index'])->name('users.index');
     Route::get('users/create', [UserController::class, 'create'])->name('users.create');

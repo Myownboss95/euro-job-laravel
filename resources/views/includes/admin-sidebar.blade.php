@@ -16,6 +16,11 @@
             <span class="nav-text">Deposit</span>
         </a>
     </li>
+    <li><a href="{{ route('admin.deposit.withdraw.index') }}" aria-expanded="false">
+        <i class="flaticon-041-graph"></i>
+        <span class="nav-text">Withdraw</span>
+    </a>
+</li>
 
     <li><a href="{{route('admin.transactions.index')}}" aria-expanded="false">
             <i class="flaticon-038-gauge"></i>
