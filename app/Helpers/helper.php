@@ -9,6 +9,11 @@ function logo()
     return asset(config('dir.logo'));
 }
 
+function format_money($amount) {
+    return '$' . number_format($amount, 2);
+}
+
+
 function favicon()
 {
     return asset(config('dir.logo'));
