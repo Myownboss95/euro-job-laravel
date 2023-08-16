@@ -169,7 +169,10 @@
                                                 <tr>
                                                     <td>{{ $transaction->reference }}</td>
                                                     <td>{{ '$' . number_format($transaction->amount) }}</td>
-                                                    <td>@if($transaction->type == 'transfer') <span class="badge badge-danger">Debit</span> @else <span class="badge badge-success">Credit</span> @endif</td>
+                                                    <td>@if($transaction->type == 'transfer') <span class="badge badge-danger">Debit</span>
+                                                        @elseif ($transaction->type == 'withdrawal')
+                                                        <span class="badge badge-warning">Withdrawal</span>
+                                                         @else <span class="badge badge-success">Credit</span> @endif</td>
                                                     <td>{{ $transaction->created_at }}</td>
                                                     <td>{{ $transaction->description ?? '--'}}</td>
                                                     <td>{{ $transaction->meta?->bank ?? '__'}}</td>
